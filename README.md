@@ -1,8 +1,9 @@
 # Disable Unicode Normalization
 
-This addon adds a menu option under Tools to allow patching out the
-`unicodedata.normalize` function that Anki uses to normalize data, for example,
-when importing flash cards.
+This addon adds a new menu option under Tools to allow globally disabling
+Unicode normalization across Anki. This is accomplished by patching out the
+`unicodedata.normalize` function.
+
 
 I wrote this plugin to prevent Anki from normalizing certain kanji (e.g.
 [隆](https://www.unicode.org/cgi-bin/GetUnihanData.pl?codepoint=F9DC)) into
